@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FactorialComponent } from './pages/factorial/factorial.component';
+import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic-equation.component';
 import { StatisticsComponent } from './pages/statistics/statistics.component';
 
 const routes: Routes = [
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path:'bai-5',
     component:FactorialComponent
+  },
+  {
+    path:'bai-9',
+    component:QuadraticEquationComponent
   },
 
 ];

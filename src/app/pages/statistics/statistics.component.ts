@@ -12,6 +12,5 @@ export class StatisticsComponent {
    const arrValue= this.arr.push(e.target.value);
    console.log('arr',this.arr);
    console.log();
-   
   }
 }

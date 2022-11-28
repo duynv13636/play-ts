@@ -7,6 +7,7 @@ import { StatisticsComponent } from './pages/statistics/statistics.component';
 import { FactorialComponent } from './pages/factorial/factorial.component';
 import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic-equation.component';
 import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
+import { TimeComponent } from './pages/time/time.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
     StatisticsComponent,
     FactorialComponent,
     QuadraticEquationComponent,
-    CamelCaseComponent
+    CamelCaseComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,

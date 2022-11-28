@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { StatisticsComponent } from './pages/statistics/statistics.component';
 import { FactorialComponent } from './pages/factorial/factorial.component';
 import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic-equation.component';
+import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StatisticsComponent,
     FactorialComponent,
-    QuadraticEquationComponent
+    QuadraticEquationComponent,
+    CamelCaseComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
 import { FactorialComponent } from './pages/factorial/factorial.component';
 import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic-equation.component';
 import { StatisticsComponent } from './pages/statistics/statistics.component';
+import { TimeComponent } from './pages/time/time.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'bai-2',
     component:CamelCaseComponent
+  },
+  {
+    path:'bai-6',
+    component:TimeComponent
   },
 
 ];

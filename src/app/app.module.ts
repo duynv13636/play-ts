@@ -11,6 +11,7 @@ import { TimeComponent } from './pages/time/time.component';
 import { ReversDataComponent } from './pages/revers-data/revers-data.component';
 import { BaiEightComponent } from './pages/bai-eight/bai-eight.component';
 import { EndsWithComponent } from './pages/ends-with/ends-with.component';
+import { UnionObjectComponent } from './pages/union-object/union-object.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EndsWithComponent } from './pages/ends-with/ends-with.component';
     TimeComponent,
     ReversDataComponent,
     BaiEightComponent,
-    EndsWithComponent
+    EndsWithComponent,
+    UnionObjectComponent
   ],
   imports: [
     BrowserModule,

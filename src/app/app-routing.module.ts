@@ -8,6 +8,7 @@ import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic
 import { ReversDataComponent } from './pages/revers-data/revers-data.component';
 import { StatisticsComponent } from './pages/statistics/statistics.component';
 import { TimeComponent } from './pages/time/time.component';
+import { UnionObjectComponent } from './pages/union-object/union-object.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path:'bai-5',
     component:EndsWithComponent
+  },
+  {
+    path:'bai-12',
+    component:UnionObjectComponent
   },
 
 ];

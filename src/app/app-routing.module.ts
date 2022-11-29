@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BaiEightComponent } from './pages/bai-eight/bai-eight.component';
 import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
+import { EndsWithComponent } from './pages/ends-with/ends-with.component';
 import { FactorialComponent } from './pages/factorial/factorial.component';
 import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic-equation.component';
 import { ReversDataComponent } from './pages/revers-data/revers-data.component';
@@ -14,7 +15,7 @@ const routes: Routes = [
     component:StatisticsComponent
   },
   {
-    path:'bai-5',
+    path:'bai-10',
     component:FactorialComponent
   },
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:'bai-8',
     component:BaiEightComponent
+  },
+  {
+    path:'bai-5',
+    component:EndsWithComponent
   },
 
 ];

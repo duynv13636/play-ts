@@ -9,6 +9,7 @@ import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic
 import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
 import { TimeComponent } from './pages/time/time.component';
 import { ReversDataComponent } from './pages/revers-data/revers-data.component';
+import { BaiEightComponent } from './pages/bai-eight/bai-eight.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReversDataComponent } from './pages/revers-data/revers-data.component';
     QuadraticEquationComponent,
     CamelCaseComponent,
     TimeComponent,
-    ReversDataComponent
+    ReversDataComponent,
+    BaiEightComponent
   ],
   imports: [
     BrowserModule,

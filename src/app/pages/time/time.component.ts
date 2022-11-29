@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeComponent implements OnInit {
   arr: any = [];
+
   constructor() {}
   ngOnInit(): void {
     this.on();
@@ -14,9 +15,8 @@ export class TimeComponent implements OnInit {
   on() {
     for (let index = 0; index < 24; index++) {
       for (let j = 0; j < 6; j++) {
-        console.log();
         this.arr.push(index + ':' + j + '0');
       }
     }
-  }
-}
+
+}}

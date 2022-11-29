@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
 import { FactorialComponent } from './pages/factorial/factorial.component';
 import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic-equation.component';
+import { ReversDataComponent } from './pages/revers-data/revers-data.component';
 import { StatisticsComponent } from './pages/statistics/statistics.component';
 import { TimeComponent } from './pages/time/time.component';
 
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path:'bai-6',
     component:TimeComponent
+  },
+  {
+    path:'bai-11',
+    component:ReversDataComponent
   },
 
 ];

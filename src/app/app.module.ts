@@ -8,6 +8,7 @@ import { FactorialComponent } from './pages/factorial/factorial.component';
 import { QuadraticEquationComponent } from './pages/quadratic-equation/quadratic-equation.component';
 import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
 import { TimeComponent } from './pages/time/time.component';
+import { ReversDataComponent } from './pages/revers-data/revers-data.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TimeComponent } from './pages/time/time.component';
     FactorialComponent,
     QuadraticEquationComponent,
     CamelCaseComponent,
-    TimeComponent
+    TimeComponent,
+    ReversDataComponent
   ],
   imports: [
     BrowserModule,

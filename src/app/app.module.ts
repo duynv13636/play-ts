@@ -10,6 +10,7 @@ import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
 import { TimeComponent } from './pages/time/time.component';
 import { ReversDataComponent } from './pages/revers-data/revers-data.component';
 import { BaiEightComponent } from './pages/bai-eight/bai-eight.component';
+import { EndsWithComponent } from './pages/ends-with/ends-with.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BaiEightComponent } from './pages/bai-eight/bai-eight.component';
     CamelCaseComponent,
     TimeComponent,
     ReversDataComponent,
-    BaiEightComponent
+    BaiEightComponent,
+    EndsWithComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,7 @@
 <p>time works!</p>
-<select>
-    <option *ngFor="let arr of arr">{{arr}}</option>
+<p class="text-xl text-red-500">6. Viết chương trình in ra tất cả giờ trong 1 ngày cách nhau 10 phút ( vd: 01:00, 01:10, 01:20 ), đổ dữ liệu vào 1 thẻ select;</p>
+<select
+  class="block w-[30%] p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+>
+  <option *ngFor="let arr of arr">{{ arr }}</option>
 </select>

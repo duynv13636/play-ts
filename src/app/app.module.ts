@@ -14,6 +14,8 @@ import { EndsWithComponent } from './pages/ends-with/ends-with.component';
 import { UnionObjectComponent } from './pages/union-object/union-object.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CalculatorComponent } from './pages/calculator/calculator.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BaiEightComponent,
     EndsWithComponent,
     UnionObjectComponent,
-    NavbarComponent
+    NavbarComponent,
+    CalculatorComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule

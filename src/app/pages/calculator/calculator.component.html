@@ -1,0 +1,266 @@
+<div
+  class="mx-auto overflow-hidden mt-10 shadow-lg mb-2 bg-[#000000] shadow-lg border rounded-lg lg:w-2/6 md:w-3/6 sm:w-4/6"
+>
+  <div class="">
+    <div class="p-5 text-white text-center text-3xl bg-[#04387A]-900">
+      Calculator
+    </div>
+
+    <div class="p-5 text-white text-right text-3xl bg-[#000000]">
+      <span class="text-orange-500"></span>
+      <input
+        type="text"
+        [(ngModel)]="toShow"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      />
+    </div>
+
+    <div class="flex items-stretch bg-[#000000] h-24">
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-[#505050] justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="%"
+          (click)="updateCal('%')"
+        >
+          %
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-[#505050] justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="("
+          (click)="updateCal('(')"
+        >
+          (
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-[#505050] justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name=")"
+          (click)="updateCal(')')"
+        >
+          )
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="/"
+          (click)="updateCal('/')"
+        >
+          ÷
+        </button>
+      </div>
+    </div>
+
+    <div class="flex items-stretch bg-[#000000] h-24">
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="7"
+          (click)="updateCal('7')"
+        >
+          7
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="8"
+          (click)="updateCal('8')"
+        >
+          8
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="9"
+          (click)="updateCal('9')"
+        >
+          9
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="*"
+          (click)="updateCal('*')"
+        >
+          ×
+        </button>
+      </div>
+    </div>
+
+    <div class="flex items-stretch bg-[#000000] h-24">
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="4"
+          (click)="updateCal('4')"
+        >
+          4
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="5"
+          (click)="updateCal('5')"
+        >
+          5
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="6"
+          (click)="updateCal('6')"
+        >
+          6
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="-"
+          (click)="updateCal('-')"
+        >
+          -
+        </button>
+      </div>
+    </div>
+
+    <div class="flex items-stretch bg-[#000000] h-24">
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="1"
+          (click)="updateCal('1')"
+        >
+          1
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="2"
+          (click)="updateCal('2')"
+        >
+          2
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="3"
+          (click)="updateCal('3')"
+        >
+          3
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="+"
+          (click)="updateCal('+')"
+        >
+          +
+        </button>
+      </div>
+    </div>
+
+    <div class="flex items-stretch bg-[#000000] h-24 mb-4">
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          (click)="clear()"
+        >
+          AC
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="0"
+          (click)="updateCal('0')"
+        >
+          0
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          name="."
+          (click)="updateCal('.')"
+        >
+          .
+        </button>
+      </div>
+
+      <div
+        class="flex-1 px-2 py-2 justify-center flex items-center text-white text-2xl font-semibold"
+      >
+        <button
+          class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
+          (click)="result()"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -20,13 +20,12 @@ export class ReversDataComponent implements OnInit {
 
     console.log(arrObj);
     const object2 = Object.fromEntries(
-      Object.entries(arrObj).map(([key, val]) => [val, key]),
+      Object.entries(arrObj).map(([key, val]) => [val, key])
     );
 
     console.log(object2);
 
-    this.string=object2;
-    
+    this.string = object2;
 
     // const obj = Object.assign({}, this.arr);
     // const stringJson = JSON.stringify(obj);

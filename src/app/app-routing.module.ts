@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BaiEightComponent } from './pages/bai-eight/bai-eight.component';
+import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { CamelCaseComponent } from './pages/camel-case/camel-case.component';
 import { EndsWithComponent } from './pages/ends-with/ends-with.component';
 import { FactorialComponent } from './pages/factorial/factorial.component';
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'bai-6',
     component: TimeComponent,
+  },
+  {
+    path: 'bai-7',
+    component: CalculatorComponent,
   },
   {
     path: 'bai-8',

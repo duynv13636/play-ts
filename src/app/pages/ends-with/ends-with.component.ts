@@ -8,6 +8,7 @@ import { endWith } from 'rxjs';
 })
 export class EndsWithComponent implements OnInit {
   constructor() {}
+  
   ngOnInit(): void {
     console.log(this.handleEndWith('duy', 'd', 1));
     this.handleEndWith('duy', 'd');

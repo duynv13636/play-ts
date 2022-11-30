@@ -12,49 +12,48 @@ import { UnionObjectComponent } from './pages/union-object/union-object.componen
 
 const routes: Routes = [
   {
-    path:'',
-    component:StatisticsComponent
+    path: 'bai-2',
+    component: StatisticsComponent,
   },
   {
-    path:'bai-10',
-    component:FactorialComponent
+    path: 'bai-3',
+    component: CamelCaseComponent,
   },
   {
-    path:'bai-9',
-    component:QuadraticEquationComponent
+    path: 'bai-5',
+    component: EndsWithComponent,
   },
   {
-    path:'bai-2',
-    component:CamelCaseComponent
+    path: 'bai-6',
+    component: TimeComponent,
   },
   {
-    path:'bai-6',
-    component:TimeComponent
+    path: 'bai-8',
+    component: BaiEightComponent,
   },
   {
-    path:'bai-11',
-    component:ReversDataComponent
-  },
-  {
-    path:'bai-8',
-    component:BaiEightComponent
-  },
-  {
-    path:'bai-5',
-    component:EndsWithComponent
-  },
-  {
-    path:'bai-12',
-    component:UnionObjectComponent
+    path: 'bai-9',
+    component: QuadraticEquationComponent,
   },
 
+  {
+    path: 'bai-10',
+    component: FactorialComponent,
+  },
+
+  {
+    path: 'bai-11',
+    component: ReversDataComponent,
+  },
+
+  {
+    path: 'bai-12',
+    component: UnionObjectComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { 
-
-  
-}
+export class AppRoutingModule {}

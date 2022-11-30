@@ -12,6 +12,8 @@ import { ReversDataComponent } from './pages/revers-data/revers-data.component';
 import { BaiEightComponent } from './pages/bai-eight/bai-eight.component';
 import { EndsWithComponent } from './pages/ends-with/ends-with.component';
 import { UnionObjectComponent } from './pages/union-object/union-object.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { UnionObjectComponent } from './pages/union-object/union-object.componen
     ReversDataComponent,
     BaiEightComponent,
     EndsWithComponent,
-    UnionObjectComponent
+    UnionObjectComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

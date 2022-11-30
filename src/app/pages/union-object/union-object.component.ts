@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class UnionObjectComponent implements OnInit {
   arr1: any = [];
   invalidEntries = 0;
-
+  string = `var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
+  var others = [{ 'x': 1, 'y': 1 }, { 'x': 1, 'y': 2 }];
+  Output : [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]`
   ngOnInit(): void {
     const array1 = [
       {

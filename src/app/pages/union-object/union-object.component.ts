@@ -6,16 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./union-object.component.css'],
 })
 export class UnionObjectComponent implements OnInit {
-  ngOnInit(): void {
-    // const objects = [
-    //   { x: 1, y: 2 },
-    //   { x: 2, y: 1 },
-    // ];
-    // const others = [
-    //   { x: 1, y: 1 },
-    //   { x: 1, y: 2 },
-    // ];
+  arr1: any = [];
+  invalidEntries = 0;
 
+  ngOnInit(): void {
     const array1 = [
       {
         x: 1,
@@ -38,15 +32,20 @@ export class UnionObjectComponent implements OnInit {
       },
     ];
 
-    const array = [...array1];
-
-    array1.forEach((item1) => {
-      array2.forEach((item2) => {
+    // const obj3 = array1.reduce((pre: any, cur) => {
+    //   const ob = array2.find((i) => i.x !== cur.x);
+    //   pre.push({ ...cur, ...ob });
+    //   return pre;
+    // }, []);
+    // console.log(obj3);
+    const arr = [...array2];
+    array2.forEach((item1) => {
+      array1.forEach((item2) => {
         if (item1.x !== item2.x && item1.y !== item2.y) {
-          array.push(item2);
+          arr.push(item2);
         }
       });
     });
-    console.log(array);
+    console.log(arr);
   }
 }

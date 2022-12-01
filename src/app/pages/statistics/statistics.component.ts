@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ObjectUnsubscribedError } from 'rxjs';
 
 @Component({
   selector: 'app-statistics',
@@ -6,27 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./statistics.component.css'],
 })
 export class StatisticsComponent {
+  string = '';
   arr: any = [];
-
   onChange(e: any) {
-    //  const arrValue= this.arr.push(e.target.value);
-    //  console.log('arr',this.arr);
-    //  console.log();
-    const arrValue = this.arr.push(e.target.value);
-    console.log('arr', this.arr);
-
-    this.arr.forEach((value: any, count: any) =>
-      console.log(`value: ${value}, count: ${value[count]}`)
-    );
-
-    const result = this.arr.reduce(
+    let arr1 = e.target.value;
+    const arr2 = arr1.split(',');
+    const result = arr2.reduce(
       (acc: any, curr: any) => ((acc[curr] = (acc[curr] || 0) + 1), acc),
       {}
     );
-    console.log(result);
-
-    for (let index = 0; index < result.length; index++) {
-      console.log(index);
+    const ar = Object.keys(result).map((i) => ({ key: i, value: result[i] }));
+    const valueSort = ar.sort((a, b) => b.value - a.value);
+    for (let index = 0; index < valueSort.length; index++) {
+      const element = valueSort[index];
+      this.arr = [...this.arr, element.key + ':' + element.value];
     }
+    JSON.stringify(this.arr);
   }
 }

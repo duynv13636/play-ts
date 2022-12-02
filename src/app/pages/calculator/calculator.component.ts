@@ -7,22 +7,39 @@ import { Component } from '@angular/core';
 })
 export class CalculatorComponent {
   toShow = '0';
-  currvalue = '';
-  updateCal(value: string) {
-    this.currvalue = this.currvalue + value;
-    this.toShow = this.currvalue;
-  }
-  result() {
-    // console.log('curr',this.currvalue);
-    try {
-      this.toShow = eval(this.currvalue);
-      this.currvalue = this.toShow;
-    } catch (error) {
-      this.toShow = 'error';
+  value: number = 0;
+  action: string | null = null;
+
+  updateCal(value: any) {
+    if (this.toShow == '0') {
+      this.toShow = value.toString();
+    } else {
+      this.toShow = `${this.toShow}${value}`;
     }
   }
+  toanHang(e: any) {
+    this.value = parseFloat(this.toShow);
+    this.action = e;
+    this.toShow = '';
+  }
+  result() {
+    const a = this.value;
+    const b = parseFloat(this.toShow);
+    let kq = 0;
+    if (this.action === '+') {
+      kq = a + b;
+    } else if (this.action === '*') {
+      kq = a * b;
+    } else if (this.action === '-') {
+      kq = a - b;
+    } else if (this.action === '/') {
+      kq = a / b;
+    }
+    this.value = kq;
+    this.toShow = kq.toString();
+  }
   clear() {
-    this.currvalue = '';
+    this.value = 0;
     this.toShow = '0';
   }
 }

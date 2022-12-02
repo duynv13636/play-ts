@@ -23,6 +23,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-[#505050] justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="%"
           (click)="updateCal('%')"
+          data-num="%"
         >
           %
         </button>
@@ -35,6 +36,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-[#505050] justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="("
           (click)="updateCal('(')"
+          data-num="("
         >
           (
         </button>
@@ -47,6 +49,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-[#505050] justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name=")"
           (click)="updateCal(')')"
+          data-num=")"
         >
           )
         </button>
@@ -58,7 +61,8 @@
         <button
           class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="/"
-          (click)="updateCal('/')"
+          (click)="toanHang('/')"
+          data-num="/"
         >
           ÷
         </button>
@@ -73,6 +77,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="7"
           (click)="updateCal('7')"
+          data-num="7"
         >
           7
         </button>
@@ -85,6 +90,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="8"
           (click)="updateCal('8')"
+          data-num="8"
         >
           8
         </button>
@@ -97,6 +103,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="9"
           (click)="updateCal('9')"
+          data-num="9"
         >
           9
         </button>
@@ -108,7 +115,8 @@
         <button
           class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="*"
-          (click)="updateCal('*')"
+          (click)="toanHang('*')"
+          data-num="*"
         >
           ×
         </button>
@@ -123,6 +131,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="4"
           (click)="updateCal('4')"
+          data-num="4"
         >
           4
         </button>
@@ -135,6 +144,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="5"
           (click)="updateCal('5')"
+          data-num="5"
         >
           5
         </button>
@@ -147,6 +157,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="6"
           (click)="updateCal('6')"
+          data-num="6"
         >
           6
         </button>
@@ -158,7 +169,8 @@
         <button
           class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="-"
-          (click)="updateCal('-')"
+          (click)="toanHang('-')"
+          data-num="-"
         >
           -
         </button>
@@ -173,6 +185,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="1"
           (click)="updateCal('1')"
+          data-num="1"
         >
           1
         </button>
@@ -185,6 +198,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="2"
           (click)="updateCal('2')"
+          data-num="2"
         >
           2
         </button>
@@ -197,6 +211,7 @@
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="3"
           (click)="updateCal('3')"
+          data-num="3"
         >
           3
         </button>
@@ -208,7 +223,8 @@
         <button
           class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="+"
-          (click)="updateCal('+')"
+          (click)="toanHang('+')"
+          data-num="+"
         >
           +
         </button>
@@ -222,6 +238,7 @@
         <button
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           (click)="clear()"
+          data-num="AC"
         >
           AC
         </button>
@@ -233,6 +250,7 @@
         <button
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="0"
+          data-num="0"
           (click)="updateCal('0')"
         >
           0
@@ -245,6 +263,7 @@
         <button
           class="rounded-full h-20 w-20 flex items-center bg-gray-800 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           name="."
+          data-num="."
           (click)="updateCal('.')"
         >
           .
@@ -257,6 +276,7 @@
         <button
           class="rounded-full h-20 w-20 flex items-center bg-orange-500 justify-center shadow-lg hover:border-gray-500 focus:outline-none"
           (click)="result()"
+          data-num="="
         >
           =
         </button>
@@ -264,4 +284,3 @@
     </div>
   </div>
 </div>
-

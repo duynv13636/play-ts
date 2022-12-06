@@ -16,6 +16,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalculatorComponent } from './pages/calculator/calculator.component';
 import { FormsModule } from '@angular/forms';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     EndsWithComponent,
     UnionObjectComponent,
     NavbarComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    VideoComponent
   ],
   imports: [
     FormsModule,
